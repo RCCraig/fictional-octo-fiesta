@@ -1,8 +1,7 @@
 <div class="row">
   <div class="col-sm-3">
      <%= order.place %>
-     <% if order.items.any? %>
-       Items:
+     <% if order.items.any? %>       
         <ul>
           <% order.items.each do |item| %>
             <li>
