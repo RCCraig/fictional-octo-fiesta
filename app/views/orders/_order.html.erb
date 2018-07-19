@@ -1,6 +1,11 @@
 <div class="row">
   <div class="col-sm-3">
-     <%= order.place %>
+    <h2>
+      <%= order.place %>
+    </h2>
+     
+     Numbers of Orders:
+     <%= order.items.count %>
      <% if order.items.any? %>       
         <ul>
           <% order.items.each do |item| %>
