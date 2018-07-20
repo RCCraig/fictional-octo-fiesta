@@ -1,15 +1,12 @@
-<p id="notice"><%= notice %></p>
+<div class="container">  
+  <h1>Orders</h1>
+  <% if @orders.any? %>
+    <div class="row">
+      <%= render @orders %> 
+    </div>
+  <% else %>
+    <%= link_to 'New Order', new_order_path, class: "btn btn-primary btn-lg" %>
 
-<div class="container">
-  <h1>Orders</h1> 
-  <%= render @orders %>
+  <% end %>
+
   
-</div>
-
- 
-
-<br>
-
-<%= link_to 'New Order', new_order_path %>
-
-
