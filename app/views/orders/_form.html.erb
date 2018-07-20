@@ -8,8 +8,7 @@
           <%= render 'item_fields', :f => item %>
         <% end %>
         <div class='links'>
-          <%= link_to_add_association 'add order', f, :items %>
-          <%= link_to_remove_association "remove order", f, class: "text-danger" %>
+          <%= link_to_add_association 'add order', f, :items %>          
         </div>
       </div>
       <%= f.submit 'Save' %>
