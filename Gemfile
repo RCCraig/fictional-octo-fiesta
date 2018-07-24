@@ -64,3 +64,4 @@ gem 'jquery-rails'
 gem 'simple_form'
 gem "cocoon"
 gem 'devise'
+gem "font-awesome-rails"
