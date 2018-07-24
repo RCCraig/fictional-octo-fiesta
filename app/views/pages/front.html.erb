@@ -1,17 +1,7 @@
 <div class="jumbotron">
-  <h1 class="display-4"><i class="fa fa-motorcycle"></i>Runner</h1>
+  <h1 class="display-4"><i class="fa fa-motorcycle fa-rotate-270"></i>Wheelie</h1>
   <p class="lead">Who's Making The Run?</p>   
-  <%= link_to 'New Order', new_order_path, class: "btn btn-primary btn-lg" %>
-  <form>
-  <div class="form-row align-items-center">
-    <div class="col-auto">
-      <label class="sr-only" for="inlineFormInput">Name</label>
-      <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Find Your Group">
-    </div>    
-    <div class="col-auto">
-      <button type="submit" class="btn btn-primary mb-2">Search</button>
-    </div>
-  </div>
-</form>
+  <%= link_to 'Join Now', new_user_registration_path, class: "btn btn-primary btn-lg" %> 
+  <%= link_to 'Find My Group', groups_path, class: "btn btn-outline-secondary btn-lg" %> 
 </div>
 

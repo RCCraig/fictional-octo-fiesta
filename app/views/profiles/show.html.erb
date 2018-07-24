@@ -1,1 +1,15 @@
-user profile
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>
+        Profile Page for:  <%= @user.email %>
+      </h2>
+
+      <p>
+        <%= link_to 'Add Group', new_group_path,  class: "nav-link btn btn-success" %>
+      </p>
+      
+    </div>
+  </div>
+</div>
+
