@@ -11,36 +11,36 @@
  * * Copyright 2011-2018 Twitter, Inc.
  * * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
 
-@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,700")
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,400italic")
 
 \:root
-  --blue: #007bff
+  --blue: #2C3E50
   --indigo: #6610f2
-  --purple: #772953
+  --purple: #6f42c1
   --pink: #e83e8c
-  --red: #DF382C
-  --orange: #E95420
-  --yellow: #EFB73E
-  --green: #38B44A
+  --red: #E74C3C
+  --orange: #fd7e14
+  --yellow: #F39C12
+  --green: #18BC9C
   --teal: #20c997
-  --cyan: #17a2b8
+  --cyan: #3498DB
   --white: #fff
-  --gray: #868e96
-  --gray-dark: #333
-  --primary: #E95420
-  --secondary: #AEA79F
-  --success: #38B44A
-  --info: #17a2b8
-  --warning: #EFB73E
-  --danger: #DF382C
-  --light: #e9ecef
-  --dark: #772953
+  --gray: #95a5a6
+  --gray-dark: #343a40
+  --primary: #2C3E50
+  --secondary: #95a5a6
+  --success: #18BC9C
+  --info: #3498DB
+  --warning: #F39C12
+  --danger: #E74C3C
+  --light: #ecf0f1
+  --dark: #7b8a8b
   --breakpoint-xs: 0
   --breakpoint-sm: 576px
   --breakpoint-md: 768px
   --breakpoint-lg: 992px
   --breakpoint-xl: 1200px
-  --font-family-sans-serif: "Ubuntu", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+  --font-family-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
 
 *
@@ -67,11 +67,11 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section
 
 body
   margin: 0
-  font-family: "Ubuntu", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
-  font-size: 1rem
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+  font-size: 0.9375rem
   font-weight: 400
   line-height: 1.5
-  color: #333
+  color: #212529
   text-align: left
   background-color: #fff
 
@@ -144,12 +144,12 @@ sup
   top: -.5em
 
 a
-  color: #E95420
+  color: #18BC9C
   text-decoration: none
   background-color: transparent
   -webkit-text-decoration-skip: objects
   &:hover
-    color: #ac3911
+    color: #0f7864
     text-decoration: underline
   &:not([href]):not([tabindex])
     color: inherit
@@ -189,7 +189,7 @@ table
 caption
   padding-top: 0.75rem
   padding-bottom: 0.75rem
-  color: #868e96
+  color: #95a5a6
   text-align: left
   caption-side: bottom
 
@@ -292,25 +292,25 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
   color: inherit
 
 h1, .h1
-  font-size: 2.5rem
+  font-size: 3rem
 
 h2, .h2
-  font-size: 2rem
+  font-size: 2.5rem
 
 h3, .h3
-  font-size: 1.75rem
+  font-size: 2rem
 
 h4, .h4
-  font-size: 1.5rem
+  font-size: 1.40625rem
 
 h5, .h5
-  font-size: 1.25rem
+  font-size: 1.171875rem
 
 h6, .h6
-  font-size: 1rem
+  font-size: 0.9375rem
 
 .lead
-  font-size: 1.25rem
+  font-size: 1.171875rem
   font-weight: 300
 
 .display-1
@@ -362,12 +362,12 @@ mark, .mark
 
 .blockquote
   margin-bottom: 1rem
-  font-size: 1.25rem
+  font-size: 1.171875rem
 
 .blockquote-footer
   display: block
   font-size: 80%
-  color: #868e96
+  color: #95a5a6
   &::before
     content: "\2014 \00A0"
 
@@ -392,7 +392,7 @@ mark, .mark
 
 .figure-caption
   font-size: 90%
-  color: #868e96
+  color: #95a5a6
 
 code
   font-size: 87.5%
@@ -1338,106 +1338,106 @@ pre
     border: 0
 
 .table-striped tbody tr:nth-of-type(odd)
-  background-color: rgba(0, 0, 0, 0.05)
+  background-color: #ecf0f1
 
 .table-hover tbody tr:hover
   background-color: rgba(0, 0, 0, 0.075)
 
 .table-primary
-  background-color: #f9cfc1
+  background-color: #c4c9ce
   >
     th, td
-      background-color: #f9cfc1
+      background-color: #c4c9ce
 
 .table-hover .table-primary:hover
-  background-color: #f7bdaa
+  background-color: #b6bcc2
   >
     td, th
-      background-color: #f7bdaa
+      background-color: #b6bcc2
 
 .table-secondary
-  background-color: #e8e6e4
+  background-color: #e1e6e6
   >
     th, td
-      background-color: #e8e6e4
+      background-color: #e1e6e6
 
 .table-hover .table-secondary:hover
-  background-color: #dcd9d6
+  background-color: #d3dada
   >
     td, th
-      background-color: #dcd9d6
+      background-color: #d3dada
 
 .table-success
-  background-color: #c7eacc
+  background-color: #beece3
   >
     th, td
-      background-color: #c7eacc
+      background-color: #beece3
 
 .table-hover .table-success:hover
-  background-color: #b4e3bb
+  background-color: #aae6db
   >
     td, th
-      background-color: #b4e3bb
+      background-color: #aae6db
 
 .table-info
-  background-color: #bee5eb
+  background-color: #c6e2f5
   >
     th, td
-      background-color: #bee5eb
+      background-color: #c6e2f5
 
 .table-hover .table-info:hover
-  background-color: #abdde5
+  background-color: #b0d7f1
   >
     td, th
-      background-color: #abdde5
+      background-color: #b0d7f1
 
 .table-warning
-  background-color: #fbebc9
+  background-color: #fce3bd
   >
     th, td
-      background-color: #fbebc9
+      background-color: #fce3bd
 
 .table-hover .table-warning:hover
-  background-color: #f9e2b1
+  background-color: #fbd9a5
   >
     td, th
-      background-color: #f9e2b1
+      background-color: #fbd9a5
 
 .table-danger
-  background-color: #f6c7c4
+  background-color: #f8cdc8
   >
     th, td
-      background-color: #f6c7c4
+      background-color: #f8cdc8
 
 .table-hover .table-danger:hover
-  background-color: #f3b2ae
+  background-color: #f5b8b1
   >
     td, th
-      background-color: #f3b2ae
+      background-color: #f5b8b1
 
 .table-light
-  background-color: #f9fafb
+  background-color: #fafbfb
   >
     th, td
-      background-color: #f9fafb
+      background-color: #fafbfb
 
 .table-hover .table-light:hover
-  background-color: #eaedf1
+  background-color: #ecf0f0
   >
     td, th
-      background-color: #eaedf1
+      background-color: #ecf0f0
 
 .table-dark
-  background-color: #d9c3cf
+  background-color: #dadedf
   >
     th, td
-      background-color: #d9c3cf
+      background-color: #dadedf
 
 .table-hover .table-dark:hover
-  background-color: #cfb3c3
+  background-color: #ccd2d3
   >
     td, th
-      background-color: #cfb3c3
+      background-color: #ccd2d3
 
 .table-active
   background-color: rgba(0, 0, 0, 0.075)
@@ -1454,18 +1454,18 @@ pre
 .table
   .thead-dark th
     color: #fff
-    background-color: #772953
-    border-color: #642246
+    background-color: #212529
+    border-color: #32383e
   .thead-light th
-    color: #495057
-    background-color: #e9ecef
+    color: #7b8a8b
+    background-color: #ecf0f1
     border-color: #dee2e6
 
 .table-dark
   color: #fff
-  background-color: #772953
+  background-color: #212529
   th, td, thead th
-    border-color: #642246
+    border-color: #32383e
   &.table-bordered
     border: 0
   &.table-striped tbody tr:nth-of-type(odd)
@@ -1526,9 +1526,9 @@ pre
   display: block
   width: 100%
   padding: 0.375rem 0.75rem
-  font-size: 1rem
+  font-size: 0.9375rem
   line-height: 1.5
-  color: #495057
+  color: #7b8a8b
   background-color: #fff
   background-clip: padding-box
   border: 1px solid #ced4da
@@ -1541,17 +1541,17 @@ pre
     background-color: transparent
     border: 0
   &:focus
-    color: #495057
+    color: #7b8a8b
     background-color: #fff
-    border-color: #f4ad94
+    border-color: #597ea2
     outline: 0
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(233, 84, 32, 0.25)
-    box-shadow: 0 0 0 0.2rem rgba(233, 84, 32, 0.25)
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(44, 62, 80, 0.25)
+    box-shadow: 0 0 0 0.2rem rgba(44, 62, 80, 0.25)
   &::-webkit-input-placeholder, &:-ms-input-placeholder, &::-ms-input-placeholder, &::placeholder
-    color: #868e96
+    color: #95a5a6
     opacity: 1
   &:disabled, &[readonly]
-    background-color: #e9ecef
+    background-color: #ecf0f1
     opacity: 1
 
 @media screen and (prefers-reduced-motion: reduce)
@@ -1561,9 +1561,9 @@ pre
 
 select.form-control
   &:not([size]):not([multiple])
-    height: calc(2.25rem + 2px)
+    height: calc(2.15625rem + 2px)
   &:focus::-ms-value
-    color: #495057
+    color: #7b8a8b
     background-color: #fff
 
 .form-control-file, .form-control-range
@@ -1580,13 +1580,13 @@ select.form-control
 .col-form-label-lg
   padding-top: calc(0.5rem + 1px)
   padding-bottom: calc(0.5rem + 1px)
-  font-size: 1.25rem
+  font-size: 1.171875rem
   line-height: 1.5
 
 .col-form-label-sm
   padding-top: calc(0.25rem + 1px)
   padding-bottom: calc(0.25rem + 1px)
-  font-size: 0.875rem
+  font-size: 0.8203125rem
   line-height: 1.5
 
 .form-control-plaintext
@@ -1596,7 +1596,7 @@ select.form-control
   padding-bottom: 0.375rem
   margin-bottom: 0
   line-height: 1.5
-  color: #333
+  color: #212529
   background-color: transparent
   border: solid transparent
   border-width: 1px 0
@@ -1620,43 +1620,43 @@ select.form-control
 
 .form-control-sm
   padding: 0.25rem 0.5rem
-  font-size: 0.875rem
+  font-size: 0.8203125rem
   line-height: 1.5
   border-radius: 0.2rem
 
 .input-group-sm >
   .form-control, .input-group-prepend > .input-group-text, .input-group-append > .input-group-text, .input-group-prepend > .btn, .input-group-append > .btn
     padding: 0.25rem 0.5rem
-    font-size: 0.875rem
+    font-size: 0.8203125rem
     line-height: 1.5
     border-radius: 0.2rem
 
 select.form-control-sm:not([size]):not([multiple])
-  height: calc(1.8125rem + 2px)
+  height: calc(1.73046875rem + 2px)
 
 .input-group-sm >
   select.form-control:not([size]):not([multiple]), .input-group-prepend > select.input-group-text:not([size]):not([multiple]), .input-group-append > select.input-group-text:not([size]):not([multiple]), .input-group-prepend > select.btn:not([size]):not([multiple]), .input-group-append > select.btn:not([size]):not([multiple])
-    height: calc(1.8125rem + 2px)
+    height: calc(1.73046875rem + 2px)
 
 .form-control-lg
   padding: 0.5rem 1rem
-  font-size: 1.25rem
+  font-size: 1.171875rem
   line-height: 1.5
   border-radius: 0.3rem
 
 .input-group-lg >
   .form-control, .input-group-prepend > .input-group-text, .input-group-append > .input-group-text, .input-group-prepend > .btn, .input-group-append > .btn
     padding: 0.5rem 1rem
-    font-size: 1.25rem
+    font-size: 1.171875rem
     line-height: 1.5
     border-radius: 0.3rem
 
 select.form-control-lg:not([size]):not([multiple])
-  height: calc(2.875rem + 2px)
+  height: calc(2.7578125rem + 2px)
 
 .input-group-lg >
   select.form-control:not([size]):not([multiple]), .input-group-prepend > select.input-group-text:not([size]):not([multiple]), .input-group-append > select.input-group-text:not([size]):not([multiple]), .input-group-prepend > select.btn:not([size]):not([multiple]), .input-group-append > select.btn:not([size]):not([multiple])
-    height: calc(2.875rem + 2px)
+    height: calc(2.7578125rem + 2px)
 
 .form-group
   margin-bottom: 1rem
@@ -1688,7 +1688,7 @@ select.form-control-lg:not([size]):not([multiple])
   margin-top: 0.3rem
   margin-left: -1.25rem
   &:disabled ~ .form-check-label
-    color: #868e96
+    color: #95a5a6
 
 .form-check-label
   margin-bottom: 0
@@ -1713,7 +1713,7 @@ select.form-control-lg:not([size]):not([multiple])
   width: 100%
   margin-top: 0.25rem
   font-size: 80%
-  color: #38B44A
+  color: #18BC9C
 
 .valid-tooltip
   position: absolute
@@ -1726,16 +1726,16 @@ select.form-control-lg:not([size]):not([multiple])
   font-size: .875rem
   line-height: 1
   color: #fff
-  background-color: rgba(56, 180, 74, 0.8)
+  background-color: rgba(24, 188, 156, 0.8)
   border-radius: .2rem
 
 .was-validated .form-control:valid, .form-control.is-valid, .was-validated .custom-select:valid, .custom-select.is-valid
-  border-color: #38B44A
+  border-color: #18BC9C
 
 .was-validated .form-control:valid:focus, .form-control.is-valid:focus, .was-validated .custom-select:valid:focus, .custom-select.is-valid:focus
-  border-color: #38B44A
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(56, 180, 74, 0.25)
-  box-shadow: 0 0 0 0.2rem rgba(56, 180, 74, 0.25)
+  border-color: #18BC9C
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(24, 188, 156, 0.25)
+  box-shadow: 0 0 0 0.2rem rgba(24, 188, 156, 0.25)
 
 .was-validated .form-control:valid ~
   .valid-feedback, .valid-tooltip
@@ -1762,7 +1762,7 @@ select.form-control-lg:not([size]):not([multiple])
     display: block
 
 .was-validated .form-check-input:valid ~ .form-check-label, .form-check-input.is-valid ~ .form-check-label
-  color: #38B44A
+  color: #18BC9C
 
 .was-validated .form-check-input:valid ~
   .valid-feedback, .valid-tooltip
@@ -1773,10 +1773,10 @@ select.form-control-lg:not([size]):not([multiple])
     display: block
 
 .was-validated .custom-control-input:valid ~ .custom-control-label, .custom-control-input.is-valid ~ .custom-control-label
-  color: #38B44A
+  color: #18BC9C
 
 .was-validated .custom-control-input:valid ~ .custom-control-label::before, .custom-control-input.is-valid ~ .custom-control-label::before
-  background-color: #8fdc9a
+  background-color: #68ecd2
 
 .was-validated .custom-control-input:valid ~
   .valid-feedback, .valid-tooltip
@@ -1787,14 +1787,14 @@ select.form-control-lg:not([size]):not([multiple])
     display: block
 
 .was-validated .custom-control-input:valid:checked ~ .custom-control-label::before, .custom-control-input.is-valid:checked ~ .custom-control-label::before
-  background-color: #55ca66
+  background-color: #24e3be
 
 .was-validated .custom-control-input:valid:focus ~ .custom-control-label::before, .custom-control-input.is-valid:focus ~ .custom-control-label::before
-  -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(56, 180, 74, 0.25)
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(56, 180, 74, 0.25)
+  -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(24, 188, 156, 0.25)
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(24, 188, 156, 0.25)
 
 .was-validated .custom-file-input:valid ~ .custom-file-label, .custom-file-input.is-valid ~ .custom-file-label
-  border-color: #38B44A
+  border-color: #18BC9C
 
 .was-validated .custom-file-input:valid ~ .custom-file-label::before, .custom-file-input.is-valid ~ .custom-file-label::before
   border-color: inherit
@@ -1808,15 +1808,15 @@ select.form-control-lg:not([size]):not([multiple])
     display: block
 
 .was-validated .custom-file-input:valid:focus ~ .custom-file-label, .custom-file-input.is-valid:focus ~ .custom-file-label
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(56, 180, 74, 0.25)
-  box-shadow: 0 0 0 0.2rem rgba(56, 180, 74, 0.25)
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(24, 188, 156, 0.25)
+  box-shadow: 0 0 0 0.2rem rgba(24, 188, 156, 0.25)
 
 .invalid-feedback
   display: none
   width: 100%
   margin-top: 0.25rem
   font-size: 80%
-  color: #DF382C
+  color: #E74C3C
 
 .invalid-tooltip
   position: absolute
@@ -1829,16 +1829,16 @@ select.form-control-lg:not([size]):not([multiple])
   font-size: .875rem
   line-height: 1
   color: #fff
-  background-color: rgba(223, 56, 44, 0.8)
+  background-color: rgba(231, 76, 60, 0.8)
   border-radius: .2rem
 
 .was-validated .form-control:invalid, .form-control.is-invalid, .was-validated .custom-select:invalid, .custom-select.is-invalid
-  border-color: #DF382C
+  border-color: #E74C3C
 
 .was-validated .form-control:invalid:focus, .form-control.is-invalid:focus, .was-validated .custom-select:invalid:focus, .custom-select.is-invalid:focus
-  border-color: #DF382C
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(223, 56, 44, 0.25)
-  box-shadow: 0 0 0 0.2rem rgba(223, 56, 44, 0.25)
+  border-color: #E74C3C
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(231, 76, 60, 0.25)
+  box-shadow: 0 0 0 0.2rem rgba(231, 76, 60, 0.25)
 
 .was-validated .form-control:invalid ~
   .invalid-feedback, .invalid-tooltip
@@ -1865,7 +1865,7 @@ select.form-control-lg:not([size]):not([multiple])
     display: block
 
 .was-validated .form-check-input:invalid ~ .form-check-label, .form-check-input.is-invalid ~ .form-check-label
-  color: #DF382C
+  color: #E74C3C
 
 .was-validated .form-check-input:invalid ~
   .invalid-feedback, .invalid-tooltip
@@ -1876,10 +1876,10 @@ select.form-control-lg:not([size]):not([multiple])
     display: block
 
 .was-validated .custom-control-input:invalid ~ .custom-control-label, .custom-control-input.is-invalid ~ .custom-control-label
-  color: #DF382C
+  color: #E74C3C
 
 .was-validated .custom-control-input:invalid ~ .custom-control-label::before, .custom-control-input.is-invalid ~ .custom-control-label::before
-  background-color: #f0a09b
+  background-color: #f5b4ae
 
 .was-validated .custom-control-input:invalid ~
   .invalid-feedback, .invalid-tooltip
@@ -1890,14 +1890,14 @@ select.form-control-lg:not([size]):not([multiple])
     display: block
 
 .was-validated .custom-control-input:invalid:checked ~ .custom-control-label::before, .custom-control-input.is-invalid:checked ~ .custom-control-label::before
-  background-color: #e66258
+  background-color: #ed7669
 
 .was-validated .custom-control-input:invalid:focus ~ .custom-control-label::before, .custom-control-input.is-invalid:focus ~ .custom-control-label::before
-  -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(223, 56, 44, 0.25)
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(223, 56, 44, 0.25)
+  -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(231, 76, 60, 0.25)
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(231, 76, 60, 0.25)
 
 .was-validated .custom-file-input:invalid ~ .custom-file-label, .custom-file-input.is-invalid ~ .custom-file-label
-  border-color: #DF382C
+  border-color: #E74C3C
 
 .was-validated .custom-file-input:invalid ~ .custom-file-label::before, .custom-file-input.is-invalid ~ .custom-file-label::before
   border-color: inherit
@@ -1911,8 +1911,8 @@ select.form-control-lg:not([size]):not([multiple])
     display: block
 
 .was-validated .custom-file-input:invalid:focus ~ .custom-file-label, .custom-file-input.is-invalid:focus ~ .custom-file-label
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(223, 56, 44, 0.25)
-  box-shadow: 0 0 0 0.2rem rgba(223, 56, 44, 0.25)
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(231, 76, 60, 0.25)
+  box-shadow: 0 0 0 0.2rem rgba(231, 76, 60, 0.25)
 
 .form-inline
   display: -webkit-box
@@ -2003,7 +2003,7 @@ select.form-control-lg:not([size]):not([multiple])
   user-select: none
   border: 1px solid transparent
   padding: 0.375rem 0.75rem
-  font-size: 1rem
+  font-size: 0.9375rem
   line-height: 1.5
   border-radius: 0.25rem
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out
@@ -2015,12 +2015,12 @@ select.form-control-lg:not([size]):not([multiple])
   &:focus
     text-decoration: none
     outline: 0
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(233, 84, 32, 0.25)
-    box-shadow: 0 0 0 0.2rem rgba(233, 84, 32, 0.25)
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(44, 62, 80, 0.25)
+    box-shadow: 0 0 0 0.2rem rgba(44, 62, 80, 0.25)
   &.focus
     outline: 0
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(233, 84, 32, 0.25)
-    box-shadow: 0 0 0 0.2rem rgba(233, 84, 32, 0.25)
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(44, 62, 80, 0.25)
+    box-shadow: 0 0 0 0.2rem rgba(44, 62, 80, 0.25)
   &.disabled, &:disabled
     opacity: 0.65
   &:not(:disabled):not(.disabled)
@@ -2038,570 +2038,570 @@ a.btn.disabled, fieldset:disabled a.btn
 
 .btn-primary
   color: #fff
-  background-color: #E95420
-  border-color: #E95420
+  background-color: #2C3E50
+  border-color: #2C3E50
   &:hover
     color: #fff
-    background-color: #ce4414
-    border-color: #c34113
+    background-color: #1e2b37
+    border-color: #1a252f
   &:focus, &.focus
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(233, 84, 32, 0.5)
-    box-shadow: 0 0 0 0.2rem rgba(233, 84, 32, 0.5)
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(44, 62, 80, 0.5)
+    box-shadow: 0 0 0 0.2rem rgba(44, 62, 80, 0.5)
   &.disabled, &:disabled
     color: #fff
-    background-color: #E95420
-    border-color: #E95420
+    background-color: #2C3E50
+    border-color: #2C3E50
   &:not(:disabled):not(.disabled)
     &:active, &.active
       color: #fff
-      background-color: #c34113
-      border-color: #b73d12
+      background-color: #1a252f
+      border-color: #151e27
 
 .show > .btn-primary.dropdown-toggle
   color: #fff
-  background-color: #c34113
-  border-color: #b73d12
+  background-color: #1a252f
+  border-color: #151e27
 
 .btn-primary:not(:disabled):not(.disabled)
   &:active:focus, &.active:focus
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(233, 84, 32, 0.5)
-    box-shadow: 0 0 0 0.2rem rgba(233, 84, 32, 0.5)
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(44, 62, 80, 0.5)
+    box-shadow: 0 0 0 0.2rem rgba(44, 62, 80, 0.5)
 
 .show > .btn-primary.dropdown-toggle:focus
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(233, 84, 32, 0.5)
-  box-shadow: 0 0 0 0.2rem rgba(233, 84, 32, 0.5)
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(44, 62, 80, 0.5)
+  box-shadow: 0 0 0 0.2rem rgba(44, 62, 80, 0.5)
 
 .btn-secondary
   color: #fff
-  background-color: #AEA79F
-  border-color: #AEA79F
+  background-color: #95a5a6
+  border-color: #95a5a6
   &:hover
     color: #fff
-    background-color: #9c948a
-    border-color: #978e83
+    background-color: #809395
+    border-color: #798d8f
   &:focus, &.focus
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(174, 167, 159, 0.5)
-    box-shadow: 0 0 0 0.2rem rgba(174, 167, 159, 0.5)
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(149, 165, 166, 0.5)
+    box-shadow: 0 0 0 0.2rem rgba(149, 165, 166, 0.5)
   &.disabled, &:disabled
     color: #fff
-    background-color: #AEA79F
-    border-color: #AEA79F
+    background-color: #95a5a6
+    border-color: #95a5a6
   &:not(:disabled):not(.disabled)
     &:active, &.active
       color: #fff
-      background-color: #978e83
-      border-color: #91877c
+      background-color: #798d8f
+      border-color: #738789
 
 .show > .btn-secondary.dropdown-toggle
   color: #fff
-  background-color: #978e83
-  border-color: #91877c
+  background-color: #798d8f
+  border-color: #738789
 
 .btn-secondary:not(:disabled):not(.disabled)
   &:active:focus, &.active:focus
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(174, 167, 159, 0.5)
-    box-shadow: 0 0 0 0.2rem rgba(174, 167, 159, 0.5)
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(149, 165, 166, 0.5)
+    box-shadow: 0 0 0 0.2rem rgba(149, 165, 166, 0.5)
 
 .show > .btn-secondary.dropdown-toggle:focus
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(174, 167, 159, 0.5)
-  box-shadow: 0 0 0 0.2rem rgba(174, 167, 159, 0.5)
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(149, 165, 166, 0.5)
+  box-shadow: 0 0 0 0.2rem rgba(149, 165, 166, 0.5)
 
 .btn-success
   color: #fff
-  background-color: #38B44A
-  border-color: #38B44A
+  background-color: #18BC9C
+  border-color: #18BC9C
   &:hover
     color: #fff
-    background-color: #2f973e
-    border-color: #2c8d3a
+    background-color: #149a80
+    border-color: #128f76
   &:focus, &.focus
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(56, 180, 74, 0.5)
-    box-shadow: 0 0 0 0.2rem rgba(56, 180, 74, 0.5)
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(24, 188, 156, 0.5)
+    box-shadow: 0 0 0 0.2rem rgba(24, 188, 156, 0.5)
   &.disabled, &:disabled
     color: #fff
-    background-color: #38B44A
-    border-color: #38B44A
+    background-color: #18BC9C
+    border-color: #18BC9C
   &:not(:disabled):not(.disabled)
     &:active, &.active
       color: #fff
-      background-color: #2c8d3a
-      border-color: #298336
+      background-color: #128f76
+      border-color: #11836d
 
 .show > .btn-success.dropdown-toggle
   color: #fff
-  background-color: #2c8d3a
-  border-color: #298336
+  background-color: #128f76
+  border-color: #11836d
 
 .btn-success:not(:disabled):not(.disabled)
   &:active:focus, &.active:focus
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(56, 180, 74, 0.5)
-    box-shadow: 0 0 0 0.2rem rgba(56, 180, 74, 0.5)
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(24, 188, 156, 0.5)
+    box-shadow: 0 0 0 0.2rem rgba(24, 188, 156, 0.5)
 
 .show > .btn-success.dropdown-toggle:focus
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(56, 180, 74, 0.5)
-  box-shadow: 0 0 0 0.2rem rgba(56, 180, 74, 0.5)
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(24, 188, 156, 0.5)
+  box-shadow: 0 0 0 0.2rem rgba(24, 188, 156, 0.5)
 
 .btn-info
   color: #fff
-  background-color: #17a2b8
-  border-color: #17a2b8
+  background-color: #3498DB
+  border-color: #3498DB
   &:hover
     color: #fff
-    background-color: #138496
-    border-color: #117a8b
+    background-color: #2384c6
+    border-color: #217dbb
   &:focus, &.focus
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5)
-    box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5)
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.5)
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.5)
   &.disabled, &:disabled
     color: #fff
-    background-color: #17a2b8
-    border-color: #17a2b8
+    background-color: #3498DB
+    border-color: #3498DB
   &:not(:disabled):not(.disabled)
     &:active, &.active
       color: #fff
-      background-color: #117a8b
-      border-color: #10707f
+      background-color: #217dbb
+      border-color: #1f76b0
 
 .show > .btn-info.dropdown-toggle
   color: #fff
-  background-color: #117a8b
-  border-color: #10707f
+  background-color: #217dbb
+  border-color: #1f76b0
 
 .btn-info:not(:disabled):not(.disabled)
   &:active:focus, &.active:focus
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5)
-    box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5)
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.5)
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.5)
 
 .show > .btn-info.dropdown-toggle:focus
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5)
-  box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5)
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.5)
+  box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.5)
 
 .btn-warning
   color: #fff
-  background-color: #EFB73E
-  border-color: #EFB73E
+  background-color: #F39C12
+  border-color: #F39C12
   &:hover
     color: #fff
-    background-color: #ecaa1b
-    border-color: #e7a413
+    background-color: #d4860b
+    border-color: #c87f0a
   &:focus, &.focus
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(239, 183, 62, 0.5)
-    box-shadow: 0 0 0 0.2rem rgba(239, 183, 62, 0.5)
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(243, 156, 18, 0.5)
+    box-shadow: 0 0 0 0.2rem rgba(243, 156, 18, 0.5)
   &.disabled, &:disabled
     color: #fff
-    background-color: #EFB73E
-    border-color: #EFB73E
+    background-color: #F39C12
+    border-color: #F39C12
   &:not(:disabled):not(.disabled)
     &:active, &.active
       color: #fff
-      background-color: #e7a413
-      border-color: #db9c12
+      background-color: #c87f0a
+      border-color: #bc770a
 
 .show > .btn-warning.dropdown-toggle
   color: #fff
-  background-color: #e7a413
-  border-color: #db9c12
+  background-color: #c87f0a
+  border-color: #bc770a
 
 .btn-warning:not(:disabled):not(.disabled)
   &:active:focus, &.active:focus
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(239, 183, 62, 0.5)
-    box-shadow: 0 0 0 0.2rem rgba(239, 183, 62, 0.5)
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(243, 156, 18, 0.5)
+    box-shadow: 0 0 0 0.2rem rgba(243, 156, 18, 0.5)
 
 .show > .btn-warning.dropdown-toggle:focus
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(239, 183, 62, 0.5)
-  box-shadow: 0 0 0 0.2rem rgba(239, 183, 62, 0.5)
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(243, 156, 18, 0.5)
+  box-shadow: 0 0 0 0.2rem rgba(243, 156, 18, 0.5)
 
 .btn-danger
   color: #fff
-  background-color: #DF382C
-  border-color: #DF382C
+  background-color: #E74C3C
+  border-color: #E74C3C
   &:hover
     color: #fff
-    background-color: #c7291e
-    border-color: #bc271c
+    background-color: #e12e1c
+    border-color: #d62c1a
   &:focus, &.focus
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(223, 56, 44, 0.5)
-    box-shadow: 0 0 0 0.2rem rgba(223, 56, 44, 0.5)
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(231, 76, 60, 0.5)
+    box-shadow: 0 0 0 0.2rem rgba(231, 76, 60, 0.5)
   &.disabled, &:disabled
     color: #fff
-    background-color: #DF382C
-    border-color: #DF382C
+    background-color: #E74C3C
+    border-color: #E74C3C
   &:not(:disabled):not(.disabled)
     &:active, &.active
       color: #fff
-      background-color: #bc271c
-      border-color: #b0251b
+      background-color: #d62c1a
+      border-color: #ca2a19
 
 .show > .btn-danger.dropdown-toggle
   color: #fff
-  background-color: #bc271c
-  border-color: #b0251b
+  background-color: #d62c1a
+  border-color: #ca2a19
 
 .btn-danger:not(:disabled):not(.disabled)
   &:active:focus, &.active:focus
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(223, 56, 44, 0.5)
-    box-shadow: 0 0 0 0.2rem rgba(223, 56, 44, 0.5)
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(231, 76, 60, 0.5)
+    box-shadow: 0 0 0 0.2rem rgba(231, 76, 60, 0.5)
 
 .show > .btn-danger.dropdown-toggle:focus
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(223, 56, 44, 0.5)
-  box-shadow: 0 0 0 0.2rem rgba(223, 56, 44, 0.5)
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(231, 76, 60, 0.5)
+  box-shadow: 0 0 0 0.2rem rgba(231, 76, 60, 0.5)
 
 .btn-light
   color: #212529
-  background-color: #e9ecef
-  border-color: #e9ecef
+  background-color: #ecf0f1
+  border-color: #ecf0f1
   &:hover
     color: #212529
-    background-color: #d3d9df
-    border-color: #cbd3da
+    background-color: #d6dfe1
+    border-color: #cfd9db
   &:focus, &.focus
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(233, 236, 239, 0.5)
-    box-shadow: 0 0 0 0.2rem rgba(233, 236, 239, 0.5)
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(236, 240, 241, 0.5)
+    box-shadow: 0 0 0 0.2rem rgba(236, 240, 241, 0.5)
   &.disabled, &:disabled
     color: #212529
-    background-color: #e9ecef
-    border-color: #e9ecef
+    background-color: #ecf0f1
+    border-color: #ecf0f1
   &:not(:disabled):not(.disabled)
     &:active, &.active
       color: #212529
-      background-color: #cbd3da
-      border-color: #c4ccd4
+      background-color: #cfd9db
+      border-color: #c7d3d6
 
 .show > .btn-light.dropdown-toggle
   color: #212529
-  background-color: #cbd3da
-  border-color: #c4ccd4
+  background-color: #cfd9db
+  border-color: #c7d3d6
 
 .btn-light:not(:disabled):not(.disabled)
   &:active:focus, &.active:focus
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(233, 236, 239, 0.5)
-    box-shadow: 0 0 0 0.2rem rgba(233, 236, 239, 0.5)
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(236, 240, 241, 0.5)
+    box-shadow: 0 0 0 0.2rem rgba(236, 240, 241, 0.5)
 
 .show > .btn-light.dropdown-toggle:focus
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(233, 236, 239, 0.5)
-  box-shadow: 0 0 0 0.2rem rgba(233, 236, 239, 0.5)
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(236, 240, 241, 0.5)
+  box-shadow: 0 0 0 0.2rem rgba(236, 240, 241, 0.5)
 
 .btn-dark
   color: #fff
-  background-color: #772953
-  border-color: #772953
+  background-color: #7b8a8b
+  border-color: #7b8a8b
   &:hover
     color: #fff
-    background-color: #5b1f3f
-    border-color: #511c39
+    background-color: #697677
+    border-color: #636f70
   &:focus, &.focus
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(119, 41, 83, 0.5)
-    box-shadow: 0 0 0 0.2rem rgba(119, 41, 83, 0.5)
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(123, 138, 139, 0.5)
+    box-shadow: 0 0 0 0.2rem rgba(123, 138, 139, 0.5)
   &.disabled, &:disabled
     color: #fff
-    background-color: #772953
-    border-color: #772953
+    background-color: #7b8a8b
+    border-color: #7b8a8b
   &:not(:disabled):not(.disabled)
     &:active, &.active
       color: #fff
-      background-color: #511c39
-      border-color: #481932
+      background-color: #636f70
+      border-color: #5d696a
 
 .show > .btn-dark.dropdown-toggle
   color: #fff
-  background-color: #511c39
-  border-color: #481932
+  background-color: #636f70
+  border-color: #5d696a
 
 .btn-dark:not(:disabled):not(.disabled)
   &:active:focus, &.active:focus
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(119, 41, 83, 0.5)
-    box-shadow: 0 0 0 0.2rem rgba(119, 41, 83, 0.5)
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(123, 138, 139, 0.5)
+    box-shadow: 0 0 0 0.2rem rgba(123, 138, 139, 0.5)
 
 .show > .btn-dark.dropdown-toggle:focus
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(119, 41, 83, 0.5)
-  box-shadow: 0 0 0 0.2rem rgba(119, 41, 83, 0.5)
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(123, 138, 139, 0.5)
+  box-shadow: 0 0 0 0.2rem rgba(123, 138, 139, 0.5)
 
 .btn-outline-primary
-  color: #E95420
+  color: #2C3E50
   background-color: transparent
   background-image: none
-  border-color: #E95420
+  border-color: #2C3E50
   &:hover
     color: #fff
-    background-color: #E95420
-    border-color: #E95420
+    background-color: #2C3E50
+    border-color: #2C3E50
   &:focus, &.focus
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(233, 84, 32, 0.5)
-    box-shadow: 0 0 0 0.2rem rgba(233, 84, 32, 0.5)
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(44, 62, 80, 0.5)
+    box-shadow: 0 0 0 0.2rem rgba(44, 62, 80, 0.5)
   &.disabled, &:disabled
-    color: #E95420
+    color: #2C3E50
     background-color: transparent
   &:not(:disabled):not(.disabled)
     &:active, &.active
       color: #fff
-      background-color: #E95420
-      border-color: #E95420
+      background-color: #2C3E50
+      border-color: #2C3E50
 
 .show > .btn-outline-primary.dropdown-toggle
   color: #fff
-  background-color: #E95420
-  border-color: #E95420
+  background-color: #2C3E50
+  border-color: #2C3E50
 
 .btn-outline-primary:not(:disabled):not(.disabled)
   &:active:focus, &.active:focus
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(233, 84, 32, 0.5)
-    box-shadow: 0 0 0 0.2rem rgba(233, 84, 32, 0.5)
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(44, 62, 80, 0.5)
+    box-shadow: 0 0 0 0.2rem rgba(44, 62, 80, 0.5)
 
 .show > .btn-outline-primary.dropdown-toggle:focus
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(233, 84, 32, 0.5)
-  box-shadow: 0 0 0 0.2rem rgba(233, 84, 32, 0.5)
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(44, 62, 80, 0.5)
+  box-shadow: 0 0 0 0.2rem rgba(44, 62, 80, 0.5)
 
 .btn-outline-secondary
-  color: #AEA79F
+  color: #95a5a6
   background-color: transparent
   background-image: none
-  border-color: #AEA79F
+  border-color: #95a5a6
   &:hover
     color: #fff
-    background-color: #AEA79F
-    border-color: #AEA79F
+    background-color: #95a5a6
+    border-color: #95a5a6
   &:focus, &.focus
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(174, 167, 159, 0.5)
-    box-shadow: 0 0 0 0.2rem rgba(174, 167, 159, 0.5)
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(149, 165, 166, 0.5)
+    box-shadow: 0 0 0 0.2rem rgba(149, 165, 166, 0.5)
   &.disabled, &:disabled
-    color: #AEA79F
+    color: #95a5a6
     background-color: transparent
   &:not(:disabled):not(.disabled)
     &:active, &.active
       color: #fff
-      background-color: #AEA79F
-      border-color: #AEA79F
+      background-color: #95a5a6
+      border-color: #95a5a6
 
 .show > .btn-outline-secondary.dropdown-toggle
   color: #fff
-  background-color: #AEA79F
-  border-color: #AEA79F
+  background-color: #95a5a6
+  border-color: #95a5a6
 
 .btn-outline-secondary:not(:disabled):not(.disabled)
   &:active:focus, &.active:focus
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(174, 167, 159, 0.5)
-    box-shadow: 0 0 0 0.2rem rgba(174, 167, 159, 0.5)
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(149, 165, 166, 0.5)
+    box-shadow: 0 0 0 0.2rem rgba(149, 165, 166, 0.5)
 
 .show > .btn-outline-secondary.dropdown-toggle:focus
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(174, 167, 159, 0.5)
-  box-shadow: 0 0 0 0.2rem rgba(174, 167, 159, 0.5)
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(149, 165, 166, 0.5)
+  box-shadow: 0 0 0 0.2rem rgba(149, 165, 166, 0.5)
 
 .btn-outline-success
-  color: #38B44A
+  color: #18BC9C
   background-color: transparent
   background-image: none
-  border-color: #38B44A
+  border-color: #18BC9C
   &:hover
     color: #fff
-    background-color: #38B44A
-    border-color: #38B44A
+    background-color: #18BC9C
+    border-color: #18BC9C
   &:focus, &.focus
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(56, 180, 74, 0.5)
-    box-shadow: 0 0 0 0.2rem rgba(56, 180, 74, 0.5)
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(24, 188, 156, 0.5)
+    box-shadow: 0 0 0 0.2rem rgba(24, 188, 156, 0.5)
   &.disabled, &:disabled
-    color: #38B44A
+    color: #18BC9C
     background-color: transparent
   &:not(:disabled):not(.disabled)
     &:active, &.active
       color: #fff
-      background-color: #38B44A
-      border-color: #38B44A
+      background-color: #18BC9C
+      border-color: #18BC9C
 
 .show > .btn-outline-success.dropdown-toggle
   color: #fff
-  background-color: #38B44A
-  border-color: #38B44A
+  background-color: #18BC9C
+  border-color: #18BC9C
 
 .btn-outline-success:not(:disabled):not(.disabled)
   &:active:focus, &.active:focus
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(56, 180, 74, 0.5)
-    box-shadow: 0 0 0 0.2rem rgba(56, 180, 74, 0.5)
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(24, 188, 156, 0.5)
+    box-shadow: 0 0 0 0.2rem rgba(24, 188, 156, 0.5)
 
 .show > .btn-outline-success.dropdown-toggle:focus
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(56, 180, 74, 0.5)
-  box-shadow: 0 0 0 0.2rem rgba(56, 180, 74, 0.5)
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(24, 188, 156, 0.5)
+  box-shadow: 0 0 0 0.2rem rgba(24, 188, 156, 0.5)
 
 .btn-outline-info
-  color: #17a2b8
+  color: #3498DB
   background-color: transparent
   background-image: none
-  border-color: #17a2b8
+  border-color: #3498DB
   &:hover
     color: #fff
-    background-color: #17a2b8
-    border-color: #17a2b8
+    background-color: #3498DB
+    border-color: #3498DB
   &:focus, &.focus
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5)
-    box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5)
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.5)
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.5)
   &.disabled, &:disabled
-    color: #17a2b8
+    color: #3498DB
     background-color: transparent
   &:not(:disabled):not(.disabled)
     &:active, &.active
       color: #fff
-      background-color: #17a2b8
-      border-color: #17a2b8
+      background-color: #3498DB
+      border-color: #3498DB
 
 .show > .btn-outline-info.dropdown-toggle
   color: #fff
-  background-color: #17a2b8
-  border-color: #17a2b8
+  background-color: #3498DB
+  border-color: #3498DB
 
 .btn-outline-info:not(:disabled):not(.disabled)
   &:active:focus, &.active:focus
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5)
-    box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5)
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.5)
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.5)
 
 .show > .btn-outline-info.dropdown-toggle:focus
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5)
-  box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5)
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.5)
+  box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.5)
 
 .btn-outline-warning
-  color: #EFB73E
+  color: #F39C12
   background-color: transparent
   background-image: none
-  border-color: #EFB73E
+  border-color: #F39C12
   &:hover
     color: #fff
-    background-color: #EFB73E
-    border-color: #EFB73E
+    background-color: #F39C12
+    border-color: #F39C12
   &:focus, &.focus
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(239, 183, 62, 0.5)
-    box-shadow: 0 0 0 0.2rem rgba(239, 183, 62, 0.5)
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(243, 156, 18, 0.5)
+    box-shadow: 0 0 0 0.2rem rgba(243, 156, 18, 0.5)
   &.disabled, &:disabled
-    color: #EFB73E
+    color: #F39C12
     background-color: transparent
   &:not(:disabled):not(.disabled)
     &:active, &.active
       color: #fff
-      background-color: #EFB73E
-      border-color: #EFB73E
+      background-color: #F39C12
+      border-color: #F39C12
 
 .show > .btn-outline-warning.dropdown-toggle
   color: #fff
-  background-color: #EFB73E
-  border-color: #EFB73E
+  background-color: #F39C12
+  border-color: #F39C12
 
 .btn-outline-warning:not(:disabled):not(.disabled)
   &:active:focus, &.active:focus
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(239, 183, 62, 0.5)
-    box-shadow: 0 0 0 0.2rem rgba(239, 183, 62, 0.5)
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(243, 156, 18, 0.5)
+    box-shadow: 0 0 0 0.2rem rgba(243, 156, 18, 0.5)
 
 .show > .btn-outline-warning.dropdown-toggle:focus
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(239, 183, 62, 0.5)
-  box-shadow: 0 0 0 0.2rem rgba(239, 183, 62, 0.5)
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(243, 156, 18, 0.5)
+  box-shadow: 0 0 0 0.2rem rgba(243, 156, 18, 0.5)
 
 .btn-outline-danger
-  color: #DF382C
+  color: #E74C3C
   background-color: transparent
   background-image: none
-  border-color: #DF382C
+  border-color: #E74C3C
   &:hover
     color: #fff
-    background-color: #DF382C
-    border-color: #DF382C
+    background-color: #E74C3C
+    border-color: #E74C3C
   &:focus, &.focus
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(223, 56, 44, 0.5)
-    box-shadow: 0 0 0 0.2rem rgba(223, 56, 44, 0.5)
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(231, 76, 60, 0.5)
+    box-shadow: 0 0 0 0.2rem rgba(231, 76, 60, 0.5)
   &.disabled, &:disabled
-    color: #DF382C
+    color: #E74C3C
     background-color: transparent
   &:not(:disabled):not(.disabled)
     &:active, &.active
       color: #fff
-      background-color: #DF382C
-      border-color: #DF382C
+      background-color: #E74C3C
+      border-color: #E74C3C
 
 .show > .btn-outline-danger.dropdown-toggle
   color: #fff
-  background-color: #DF382C
-  border-color: #DF382C
+  background-color: #E74C3C
+  border-color: #E74C3C
 
 .btn-outline-danger:not(:disabled):not(.disabled)
   &:active:focus, &.active:focus
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(223, 56, 44, 0.5)
-    box-shadow: 0 0 0 0.2rem rgba(223, 56, 44, 0.5)
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(231, 76, 60, 0.5)
+    box-shadow: 0 0 0 0.2rem rgba(231, 76, 60, 0.5)
 
 .show > .btn-outline-danger.dropdown-toggle:focus
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(223, 56, 44, 0.5)
-  box-shadow: 0 0 0 0.2rem rgba(223, 56, 44, 0.5)
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(231, 76, 60, 0.5)
+  box-shadow: 0 0 0 0.2rem rgba(231, 76, 60, 0.5)
 
 .btn-outline-light
-  color: #e9ecef
+  color: #ecf0f1
   background-color: transparent
   background-image: none
-  border-color: #e9ecef
+  border-color: #ecf0f1
   &:hover
     color: #212529
-    background-color: #e9ecef
-    border-color: #e9ecef
+    background-color: #ecf0f1
+    border-color: #ecf0f1
   &:focus, &.focus
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(233, 236, 239, 0.5)
-    box-shadow: 0 0 0 0.2rem rgba(233, 236, 239, 0.5)
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(236, 240, 241, 0.5)
+    box-shadow: 0 0 0 0.2rem rgba(236, 240, 241, 0.5)
   &.disabled, &:disabled
-    color: #e9ecef
+    color: #ecf0f1
     background-color: transparent
   &:not(:disabled):not(.disabled)
     &:active, &.active
       color: #212529
-      background-color: #e9ecef
-      border-color: #e9ecef
+      background-color: #ecf0f1
+      border-color: #ecf0f1
 
 .show > .btn-outline-light.dropdown-toggle
   color: #212529
-  background-color: #e9ecef
-  border-color: #e9ecef
+  background-color: #ecf0f1
+  border-color: #ecf0f1
 
 .btn-outline-light:not(:disabled):not(.disabled)
   &:active:focus, &.active:focus
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(233, 236, 239, 0.5)
-    box-shadow: 0 0 0 0.2rem rgba(233, 236, 239, 0.5)
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(236, 240, 241, 0.5)
+    box-shadow: 0 0 0 0.2rem rgba(236, 240, 241, 0.5)
 
 .show > .btn-outline-light.dropdown-toggle:focus
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(233, 236, 239, 0.5)
-  box-shadow: 0 0 0 0.2rem rgba(233, 236, 239, 0.5)
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(236, 240, 241, 0.5)
+  box-shadow: 0 0 0 0.2rem rgba(236, 240, 241, 0.5)
 
 .btn-outline-dark
-  color: #772953
+  color: #7b8a8b
   background-color: transparent
   background-image: none
-  border-color: #772953
+  border-color: #7b8a8b
   &:hover
     color: #fff
-    background-color: #772953
-    border-color: #772953
+    background-color: #7b8a8b
+    border-color: #7b8a8b
   &:focus, &.focus
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(119, 41, 83, 0.5)
-    box-shadow: 0 0 0 0.2rem rgba(119, 41, 83, 0.5)
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(123, 138, 139, 0.5)
+    box-shadow: 0 0 0 0.2rem rgba(123, 138, 139, 0.5)
   &.disabled, &:disabled
-    color: #772953
+    color: #7b8a8b
     background-color: transparent
   &:not(:disabled):not(.disabled)
     &:active, &.active
       color: #fff
-      background-color: #772953
-      border-color: #772953
+      background-color: #7b8a8b
+      border-color: #7b8a8b
 
 .show > .btn-outline-dark.dropdown-toggle
   color: #fff
-  background-color: #772953
-  border-color: #772953
+  background-color: #7b8a8b
+  border-color: #7b8a8b
 
 .btn-outline-dark:not(:disabled):not(.disabled)
   &:active:focus, &.active:focus
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(119, 41, 83, 0.5)
-    box-shadow: 0 0 0 0.2rem rgba(119, 41, 83, 0.5)
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(123, 138, 139, 0.5)
+    box-shadow: 0 0 0 0.2rem rgba(123, 138, 139, 0.5)
 
 .show > .btn-outline-dark.dropdown-toggle:focus
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(119, 41, 83, 0.5)
-  box-shadow: 0 0 0 0.2rem rgba(119, 41, 83, 0.5)
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(123, 138, 139, 0.5)
+  box-shadow: 0 0 0 0.2rem rgba(123, 138, 139, 0.5)
 
 .btn-link
   font-weight: 400
-  color: #E95420
+  color: #18BC9C
   background-color: transparent
   &:hover
-    color: #ac3911
+    color: #0f7864
     text-decoration: underline
     background-color: transparent
     border-color: transparent
@@ -2611,18 +2611,18 @@ a.btn.disabled, fieldset:disabled a.btn
     -webkit-box-shadow: none
     box-shadow: none
   &:disabled, &.disabled
-    color: #868e96
+    color: #95a5a6
     pointer-events: none
 
 .btn-lg, .btn-group-lg > .btn
   padding: 0.5rem 1rem
-  font-size: 1.25rem
+  font-size: 1.171875rem
   line-height: 1.5
   border-radius: 0.3rem
 
 .btn-sm, .btn-group-sm > .btn
   padding: 0.25rem 0.5rem
-  font-size: 0.875rem
+  font-size: 0.8203125rem
   line-height: 1.5
   border-radius: 0.2rem
 
@@ -2690,8 +2690,8 @@ input
   min-width: 10rem
   padding: 0.5rem 0
   margin: 0.125rem 0 0
-  font-size: 1rem
-  color: #333
+  font-size: 0.9375rem
+  color: #212529
   text-align: left
   list-style: none
   background-color: #fff
@@ -2788,7 +2788,7 @@ input
   height: 0
   margin: 0.5rem 0
   overflow: hidden
-  border-top: 1px solid #e9ecef
+  border-top: 1px solid #ecf0f1
 
 .dropdown-item
   display: block
@@ -2796,21 +2796,17 @@ input
   padding: 0.25rem 1.5rem
   clear: both
   font-weight: 400
-  color: #212529
+  color: #7b8a8b
   text-align: inherit
   white-space: nowrap
   background-color: transparent
   border: 0
-  &:hover, &:focus
-    color: #16181b
-    text-decoration: none
-    background-color: #f8f9fa
-  &.active, &:active
+  &:hover, &:focus, &.active, &:active
     color: #fff
     text-decoration: none
-    background-color: #E95420
+    background-color: #2C3E50
   &.disabled, &:disabled
-    color: #868e96
+    color: #95a5a6
     background-color: transparent
 
 .dropdown-menu.show
@@ -2820,14 +2816,14 @@ input
   display: block
   padding: 0.5rem 1.5rem
   margin-bottom: 0
-  font-size: 0.875rem
-  color: #868e96
+  font-size: 0.8203125rem
+  color: #95a5a6
   white-space: nowrap
 
 .dropdown-item-text
   display: block
   padding: 0.25rem 1.5rem
-  color: #212529
+  color: #7b8a8b
 
 .btn-group, .btn-group-vertical
   position: relative
@@ -3051,13 +3047,13 @@ input
   align-items: center
   padding: 0.375rem 0.75rem
   margin-bottom: 0
-  font-size: 1rem
+  font-size: 0.9375rem
   font-weight: 400
   line-height: 1.5
-  color: #495057
+  color: #7b8a8b
   text-align: center
   white-space: nowrap
-  background-color: #e9ecef
+  background-color: #ecf0f1
   border: 1px solid #ced4da
   border-radius: 0.25rem
   input
@@ -3110,17 +3106,17 @@ input
   opacity: 0
   &:checked ~ .custom-control-label::before
     color: #fff
-    background-color: #E95420
+    background-color: #2C3E50
   &:focus ~ .custom-control-label::before
-    -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(233, 84, 32, 0.25)
-    box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(233, 84, 32, 0.25)
+    -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(44, 62, 80, 0.25)
+    box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(44, 62, 80, 0.25)
   &:active ~ .custom-control-label::before
     color: #fff
-    background-color: #f9d1c2
+    background-color: #7997b5
   &:disabled ~ .custom-control-label
-    color: #868e96
+    color: #95a5a6
     &::before
-      background-color: #e9ecef
+      background-color: #ecf0f1
 
 .custom-control-label
   position: relative
@@ -3157,17 +3153,17 @@ input
   .custom-control-input
     &:checked ~ .custom-control-label
       &::before
-        background-color: #E95420
+        background-color: #2C3E50
       &::after
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E")
     &:indeterminate ~ .custom-control-label
       &::before
-        background-color: #E95420
+        background-color: #2C3E50
       &::after
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 4'%3E%3Cpath stroke='%23fff' d='M0 2h4'/%3E%3C/svg%3E")
     &:disabled
       &:checked ~ .custom-control-label::before, &:indeterminate ~ .custom-control-label::before
-        background-color: rgba(233, 84, 32, 0.5)
+        background-color: rgba(44, 62, 80, 0.5)
 
 .custom-radio
   .custom-control-label::before
@@ -3175,21 +3171,21 @@ input
   .custom-control-input
     &:checked ~ .custom-control-label
       &::before
-        background-color: #E95420
+        background-color: #2C3E50
       &::after
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23fff'/%3E%3C/svg%3E")
     &:disabled:checked ~ .custom-control-label::before
-      background-color: rgba(233, 84, 32, 0.5)
+      background-color: rgba(44, 62, 80, 0.5)
 
 .custom-select
   display: inline-block
   width: 100%
-  height: calc(2.25rem + 2px)
+  height: calc(2.15625rem + 2px)
   padding: 0.375rem 1.75rem 0.375rem 0.75rem
   line-height: 1.5
-  color: #495057
+  color: #7b8a8b
   vertical-align: middle
-  background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23333' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center
+  background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center
   background-size: 8px 10px
   border: 1px solid #ced4da
   border-radius: 0.25rem
@@ -3197,31 +3193,31 @@ input
   -moz-appearance: none
   appearance: none
   &:focus
-    border-color: #f4ad94
+    border-color: #597ea2
     outline: 0
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(244, 173, 148, 0.5)
-    box-shadow: 0 0 0 0.2rem rgba(244, 173, 148, 0.5)
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(89, 126, 162, 0.5)
+    box-shadow: 0 0 0 0.2rem rgba(89, 126, 162, 0.5)
     &::-ms-value
-      color: #495057
+      color: #7b8a8b
       background-color: #fff
   &[multiple], &[size]:not([size="1"])
     height: auto
     padding-right: 0.75rem
     background-image: none
   &:disabled
-    color: #868e96
-    background-color: #e9ecef
+    color: #95a5a6
+    background-color: #ecf0f1
   &::-ms-expand
     opacity: 0
 
 .custom-select-sm
-  height: calc(1.8125rem + 2px)
+  height: calc(1.73046875rem + 2px)
   padding-top: 0.375rem
   padding-bottom: 0.375rem
   font-size: 75%
 
 .custom-select-lg
-  height: calc(2.875rem + 2px)
+  height: calc(2.7578125rem + 2px)
   padding-top: 0.375rem
   padding-bottom: 0.375rem
   font-size: 125%
@@ -3230,24 +3226,24 @@ input
   position: relative
   display: inline-block
   width: 100%
-  height: calc(2.25rem + 2px)
+  height: calc(2.15625rem + 2px)
   margin-bottom: 0
 
 .custom-file-input
   position: relative
   z-index: 2
   width: 100%
-  height: calc(2.25rem + 2px)
+  height: calc(2.15625rem + 2px)
   margin: 0
   opacity: 0
   &:focus ~ .custom-file-label
-    border-color: #f4ad94
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(233, 84, 32, 0.25)
-    box-shadow: 0 0 0 0.2rem rgba(233, 84, 32, 0.25)
+    border-color: #597ea2
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(44, 62, 80, 0.25)
+    box-shadow: 0 0 0 0.2rem rgba(44, 62, 80, 0.25)
     &::after
-      border-color: #f4ad94
+      border-color: #597ea2
   &:disabled ~ .custom-file-label
-    background-color: #e9ecef
+    background-color: #ecf0f1
   &:lang(en) ~ .custom-file-label::after
     content: "Browse"
 
@@ -3257,10 +3253,10 @@ input
   right: 0
   left: 0
   z-index: 1
-  height: calc(2.25rem + 2px)
+  height: calc(2.15625rem + 2px)
   padding: 0.375rem 0.75rem
   line-height: 1.5
-  color: #495057
+  color: #7b8a8b
   background-color: #fff
   border: 1px solid #ced4da
   border-radius: 0.25rem
@@ -3271,12 +3267,12 @@ input
     bottom: 0
     z-index: 3
     display: block
-    height: 2.25rem
+    height: 2.15625rem
     padding: 0.375rem 0.75rem
     line-height: 1.5
-    color: #495057
+    color: #7b8a8b
     content: "Browse"
-    background-color: #e9ecef
+    background-color: #ecf0f1
     border-left: 1px solid #ced4da
     border-radius: 0 0.25rem 0.25rem 0
 
@@ -3295,7 +3291,7 @@ input
     width: 1rem
     height: 1rem
     margin-top: -0.25rem
-    background-color: #E95420
+    background-color: #2C3E50
     border: 0
     border-radius: 1rem
     -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out
@@ -3306,10 +3302,10 @@ input
     appearance: none
     &:focus
       outline: none
-      -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(233, 84, 32, 0.25)
-      box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(233, 84, 32, 0.25)
+      -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(44, 62, 80, 0.25)
+      box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(44, 62, 80, 0.25)
     &:active
-      background-color: #f9d1c2
+      background-color: #7997b5
   &::-webkit-slider-runnable-track
     width: 100%
     height: 0.5rem
@@ -3321,7 +3317,7 @@ input
   &::-moz-range-thumb
     width: 1rem
     height: 1rem
-    background-color: #E95420
+    background-color: #2C3E50
     border: 0
     border-radius: 1rem
     -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out
@@ -3332,9 +3328,9 @@ input
     appearance: none
     &:focus
       outline: none
-      box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(233, 84, 32, 0.25)
+      box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(44, 62, 80, 0.25)
     &:active
-      background-color: #f9d1c2
+      background-color: #7997b5
   &::-moz-range-track
     width: 100%
     height: 0.5rem
@@ -3346,7 +3342,7 @@ input
   &::-ms-thumb
     width: 1rem
     height: 1rem
-    background-color: #E95420
+    background-color: #2C3E50
     border: 0
     border-radius: 1rem
     -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out
@@ -3356,9 +3352,9 @@ input
     appearance: none
     &:focus
       outline: none
-      box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(233, 84, 32, 0.25)
+      box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(44, 62, 80, 0.25)
     &:active
-      background-color: #f9d1c2
+      background-color: #7997b5
   &::-ms-track
     width: 100%
     height: 0.5rem
@@ -3413,14 +3409,14 @@ input
 
 .nav-link
   display: block
-  padding: 0.5rem 1rem
+  padding: 0.5rem 2rem
   &:hover, &:focus
     text-decoration: none
   &.disabled
-    color: #868e96
+    color: #95a5a6
 
 .nav-tabs
-  border-bottom: 1px solid #dee2e6
+  border-bottom: 1px solid #ecf0f1
   .nav-item
     margin-bottom: -1px
   .nav-link
@@ -3428,17 +3424,17 @@ input
     border-top-left-radius: 0.25rem
     border-top-right-radius: 0.25rem
     &:hover, &:focus
-      border-color: #e9ecef #e9ecef #dee2e6
+      border-color: #ecf0f1 #ecf0f1 #ecf0f1
     &.disabled
-      color: #868e96
+      color: #95a5a6
       background-color: transparent
       border-color: transparent
     &.active
-      color: #495057
+      color: #7b8a8b
       background-color: #fff
       border-color: #dee2e6 #dee2e6 #fff
   .nav-item.show .nav-link
-    color: #495057
+    color: #7b8a8b
     background-color: #fff
     border-color: #dee2e6 #dee2e6 #fff
   .dropdown-menu
@@ -3451,10 +3447,10 @@ input
     border-radius: 0.25rem
     &.active
       color: #fff
-      background-color: #E95420
+      background-color: #2C3E50
   .show > .nav-link
     color: #fff
-    background-color: #E95420
+    background-color: #2C3E50
 
 .nav-fill .nav-item
   -webkit-box-flex: 1
@@ -3489,7 +3485,7 @@ input
   -webkit-box-pack: justify
   -ms-flex-pack: justify
   justify-content: space-between
-  padding: 0.5rem 1rem
+  padding: 1rem 1rem
   >
     .container, .container-fluid
       display: -webkit-box
@@ -3506,10 +3502,10 @@ input
 
 .navbar-brand
   display: inline-block
-  padding-top: 0.3125rem
-  padding-bottom: 0.3125rem
+  padding-top: 0.32421875rem
+  padding-bottom: 0.32421875rem
   margin-right: 1rem
-  font-size: 1.25rem
+  font-size: 1.171875rem
   line-height: inherit
   white-space: nowrap
   &:hover, &:focus
@@ -3550,7 +3546,7 @@ input
 
 .navbar-toggler
   padding: 0.25rem 0.75rem
-  font-size: 1.25rem
+  font-size: 1.171875rem
   line-height: 1
   background-color: transparent
   border: 1px solid transparent
@@ -3792,9 +3788,9 @@ input
       color: #fff
   .navbar-nav
     .nav-link
-      color: rgba(255, 255, 255, 0.5)
+      color: #fff
       &:hover, &:focus
-        color: rgba(255, 255, 255, 0.75)
+        color: #18BC9C
       &.disabled
         color: rgba(255, 255, 255, 0.25)
     .show > .nav-link, .active > .nav-link
@@ -3803,12 +3799,12 @@ input
       &.show, &.active
         color: #fff
   .navbar-toggler
-    color: rgba(255, 255, 255, 0.5)
+    color: #fff
     border-color: rgba(255, 255, 255, 0.1)
   .navbar-toggler-icon
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
   .navbar-text
-    color: rgba(255, 255, 255, 0.5)
+    color: #fff
     a
       color: #fff
       &:hover, &:focus
@@ -4037,7 +4033,7 @@ input
   padding: 0.75rem 1rem
   margin-bottom: 1rem
   list-style: none
-  background-color: #e9ecef
+  background-color: #ecf0f1
   border-radius: 0.25rem
 
 .breadcrumb-item
@@ -4046,13 +4042,13 @@ input
     &::before
       display: inline-block
       padding-right: 0.5rem
-      color: #868e96
+      color: #95a5a6
       content: "/"
     &:hover::before
       text-decoration: underline
       text-decoration: none
   &.active
-    color: #868e96
+    color: #95a5a6
 
 .pagination
   display: -webkit-box
@@ -4066,22 +4062,22 @@ input
   position: relative
   display: block
   padding: 0.5rem 0.75rem
-  margin-left: -1px
+  margin-left: 0
   line-height: 1.25
-  color: #E95420
-  background-color: #fff
-  border: 1px solid #dee2e6
+  color: #fff
+  background-color: #18BC9C
+  border: 0 solid transparent
   &:hover
     z-index: 2
-    color: #ac3911
+    color: #fff
     text-decoration: none
-    background-color: #e9ecef
-    border-color: #dee2e6
+    background-color: #0f7864
+    border-color: transparent
   &:focus
     z-index: 2
     outline: 0
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(233, 84, 32, 0.25)
-    box-shadow: 0 0 0 0.2rem rgba(233, 84, 32, 0.25)
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(44, 62, 80, 0.25)
+    box-shadow: 0 0 0 0.2rem rgba(44, 62, 80, 0.25)
   &:not(:disabled):not(.disabled)
     cursor: pointer
 
@@ -4096,19 +4092,19 @@ input
   &.active .page-link
     z-index: 1
     color: #fff
-    background-color: #E95420
-    border-color: #E95420
+    background-color: #0f7864
+    border-color: transparent
   &.disabled .page-link
-    color: #868e96
+    color: #ecf0f1
     pointer-events: none
     cursor: auto
-    background-color: #fff
-    border-color: #dee2e6
+    background-color: #3be6c4
+    border-color: transparent
 
 .pagination-lg
   .page-link
     padding: 0.75rem 1.5rem
-    font-size: 1.25rem
+    font-size: 1.171875rem
     line-height: 1.5
   .page-item
     &:first-child .page-link
@@ -4121,7 +4117,7 @@ input
 .pagination-sm
   .page-link
     padding: 0.25rem 0.5rem
-    font-size: 0.875rem
+    font-size: 0.8203125rem
     line-height: 1.5
   .page-item
     &:first-child .page-link
@@ -4155,80 +4151,80 @@ input
 
 .badge-primary
   color: #fff
-  background-color: #E95420
+  background-color: #2C3E50
   &[href]
     &:hover, &:focus
       color: #fff
       text-decoration: none
-      background-color: #c34113
+      background-color: #1a252f
 
 .badge-secondary
   color: #fff
-  background-color: #AEA79F
+  background-color: #95a5a6
   &[href]
     &:hover, &:focus
       color: #fff
       text-decoration: none
-      background-color: #978e83
+      background-color: #798d8f
 
 .badge-success
   color: #fff
-  background-color: #38B44A
+  background-color: #18BC9C
   &[href]
     &:hover, &:focus
       color: #fff
       text-decoration: none
-      background-color: #2c8d3a
+      background-color: #128f76
 
 .badge-info
   color: #fff
-  background-color: #17a2b8
+  background-color: #3498DB
   &[href]
     &:hover, &:focus
       color: #fff
       text-decoration: none
-      background-color: #117a8b
+      background-color: #217dbb
 
 .badge-warning
   color: #fff
-  background-color: #EFB73E
+  background-color: #F39C12
   &[href]
     &:hover, &:focus
       color: #fff
       text-decoration: none
-      background-color: #e7a413
+      background-color: #c87f0a
 
 .badge-danger
   color: #fff
-  background-color: #DF382C
+  background-color: #E74C3C
   &[href]
     &:hover, &:focus
       color: #fff
       text-decoration: none
-      background-color: #bc271c
+      background-color: #d62c1a
 
 .badge-light
   color: #212529
-  background-color: #e9ecef
+  background-color: #ecf0f1
   &[href]
     &:hover, &:focus
       color: #212529
       text-decoration: none
-      background-color: #cbd3da
+      background-color: #cfd9db
 
 .badge-dark
   color: #fff
-  background-color: #772953
+  background-color: #7b8a8b
   &[href]
     &:hover, &:focus
       color: #fff
       text-decoration: none
-      background-color: #511c39
+      background-color: #636f70
 
 .jumbotron
   padding: 2rem 1rem
   margin-bottom: 2rem
-  background-color: #e9ecef
+  background-color: #ecf0f1
   border-radius: 0.3rem
 
 @media (min-width: 576px)
@@ -4254,7 +4250,7 @@ input
   font-weight: 700
 
 .alert-dismissible
-  padding-right: 4rem
+  padding-right: 3.90625rem
   .close
     position: absolute
     top: 0
@@ -4263,80 +4259,80 @@ input
     color: inherit
 
 .alert-primary
-  color: #792c11
-  background-color: #fbddd2
-  border-color: #f9cfc1
+  color: #17202a
+  background-color: #d5d8dc
+  border-color: #c4c9ce
   hr
-    border-top-color: #f7bdaa
+    border-top-color: #b6bcc2
   .alert-link
-    color: #4c1c0b
+    color: #050709
 
 .alert-secondary
-  color: #5a5753
-  background-color: #efedec
-  border-color: #e8e6e4
+  color: #4d5656
+  background-color: #eaeded
+  border-color: #e1e6e6
   hr
-    border-top-color: #dcd9d6
+    border-top-color: #d3dada
   .alert-link
-    color: #3f3d3b
+    color: #353b3b
 
 .alert-success
-  color: #1d5e26
-  background-color: #d7f0db
-  border-color: #c7eacc
+  color: #0c6251
+  background-color: #d1f2eb
+  border-color: #beece3
   hr
-    border-top-color: #b4e3bb
+    border-top-color: #aae6db
   .alert-link
-    color: #113716
+    color: #06352b
 
 .alert-info
-  color: #0c5460
-  background-color: #d1ecf1
-  border-color: #bee5eb
+  color: #1b4f72
+  background-color: #d6eaf8
+  border-color: #c6e2f5
   hr
-    border-top-color: #abdde5
+    border-top-color: #b0d7f1
   .alert-link
-    color: #062c33
+    color: #113249
 
 .alert-warning
-  color: #7c5f20
-  background-color: #fcf1d8
-  border-color: #fbebc9
+  color: #7e5109
+  background-color: #fdebd0
+  border-color: #fce3bd
   hr
-    border-top-color: #f9e2b1
+    border-top-color: #fbd9a5
   .alert-link
-    color: #534016
+    color: #4e3206
 
 .alert-danger
-  color: #741d17
-  background-color: #f9d7d5
-  border-color: #f6c7c4
+  color: #78281f
+  background-color: #fadbd8
+  border-color: #f8cdc8
   hr
-    border-top-color: #f3b2ae
+    border-top-color: #f5b8b1
   .alert-link
-    color: #49120f
+    color: #4f1a15
 
 .alert-light
-  color: #797b7c
-  background-color: #fbfbfc
-  border-color: #f9fafb
+  color: #7b7d7d
+  background-color: #fbfcfc
+  border-color: #fafbfb
   hr
-    border-top-color: #eaedf1
+    border-top-color: #ecf0f0
   .alert-link
-    color: #606162
+    color: #626363
 
 .alert-dark
-  color: #3e152b
-  background-color: #e4d4dd
-  border-color: #d9c3cf
+  color: #404848
+  background-color: #e5e8e8
+  border-color: #dadedf
   hr
-    border-top-color: #cfb3c3
+    border-top-color: #ccd2d3
   .alert-link
-    color: #180811
+    color: #282d2d
 
 @-webkit-keyframes progress-bar-stripes
   from
-    background-position: 1rem 0
+    background-position: 0.625rem 0
 
   to
     background-position: 0 0
@@ -4344,7 +4340,7 @@ input
 
 @keyframes progress-bar-stripes
   from
-    background-position: 1rem 0
+    background-position: 0.625rem 0
 
   to
     background-position: 0 0
@@ -4354,10 +4350,10 @@ input
   display: -webkit-box
   display: -ms-flexbox
   display: flex
-  height: 1rem
+  height: 0.625rem
   overflow: hidden
-  font-size: 0.75rem
-  background-color: #e9ecef
+  font-size: 0.625rem
+  background-color: #ecf0f1
   border-radius: 0.25rem
 
 .progress-bar
@@ -4374,7 +4370,7 @@ input
   color: #fff
   text-align: center
   white-space: nowrap
-  background-color: #E95420
+  background-color: #2C3E50
   -webkit-transition: width 0.6s ease
   transition: width 0.6s ease
 
@@ -4385,7 +4381,7 @@ input
 
 .progress-bar-striped
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent)
-  background-size: 1rem 1rem
+  background-size: 0.625rem 0.625rem
 
 .progress-bar-animated
   -webkit-animation: progress-bar-stripes 1s linear infinite
@@ -4417,15 +4413,15 @@ input
 
 .list-group-item-action
   width: 100%
-  color: #495057
+  color: #7b8a8b
   text-align: inherit
   &:hover, &:focus
-    color: #495057
+    color: #7b8a8b
     text-decoration: none
-    background-color: #f8f9fa
+    background-color: #ecf0f1
   &:active
-    color: #333
-    background-color: #e9ecef
+    color: #212529
+    background-color: #ecf0f1
 
 .list-group-item
   position: relative
@@ -4445,13 +4441,13 @@ input
     z-index: 1
     text-decoration: none
   &.disabled, &:disabled
-    color: #868e96
-    background-color: #fff
+    color: #95a5a6
+    background-color: #ecf0f1
   &.active
     z-index: 2
     color: #fff
-    background-color: #E95420
-    border-color: #E95420
+    background-color: #2C3E50
+    border-color: #2C3E50
 
 .list-group-flush
   .list-group-item
@@ -4464,113 +4460,113 @@ input
     border-bottom: 0
 
 .list-group-item-primary
-  color: #792c11
-  background-color: #f9cfc1
+  color: #17202a
+  background-color: #c4c9ce
   &.list-group-item-action
     &:hover, &:focus
-      color: #792c11
-      background-color: #f7bdaa
+      color: #17202a
+      background-color: #b6bcc2
     &.active
       color: #fff
-      background-color: #792c11
-      border-color: #792c11
+      background-color: #17202a
+      border-color: #17202a
 
 .list-group-item-secondary
-  color: #5a5753
-  background-color: #e8e6e4
+  color: #4d5656
+  background-color: #e1e6e6
   &.list-group-item-action
     &:hover, &:focus
-      color: #5a5753
-      background-color: #dcd9d6
+      color: #4d5656
+      background-color: #d3dada
     &.active
       color: #fff
-      background-color: #5a5753
-      border-color: #5a5753
+      background-color: #4d5656
+      border-color: #4d5656
 
 .list-group-item-success
-  color: #1d5e26
-  background-color: #c7eacc
+  color: #0c6251
+  background-color: #beece3
   &.list-group-item-action
     &:hover, &:focus
-      color: #1d5e26
-      background-color: #b4e3bb
+      color: #0c6251
+      background-color: #aae6db
     &.active
       color: #fff
-      background-color: #1d5e26
-      border-color: #1d5e26
+      background-color: #0c6251
+      border-color: #0c6251
 
 .list-group-item-info
-  color: #0c5460
-  background-color: #bee5eb
+  color: #1b4f72
+  background-color: #c6e2f5
   &.list-group-item-action
     &:hover, &:focus
-      color: #0c5460
-      background-color: #abdde5
+      color: #1b4f72
+      background-color: #b0d7f1
     &.active
       color: #fff
-      background-color: #0c5460
-      border-color: #0c5460
+      background-color: #1b4f72
+      border-color: #1b4f72
 
 .list-group-item-warning
-  color: #7c5f20
-  background-color: #fbebc9
+  color: #7e5109
+  background-color: #fce3bd
   &.list-group-item-action
     &:hover, &:focus
-      color: #7c5f20
-      background-color: #f9e2b1
+      color: #7e5109
+      background-color: #fbd9a5
     &.active
       color: #fff
-      background-color: #7c5f20
-      border-color: #7c5f20
+      background-color: #7e5109
+      border-color: #7e5109
 
 .list-group-item-danger
-  color: #741d17
-  background-color: #f6c7c4
+  color: #78281f
+  background-color: #f8cdc8
   &.list-group-item-action
     &:hover, &:focus
-      color: #741d17
-      background-color: #f3b2ae
+      color: #78281f
+      background-color: #f5b8b1
     &.active
       color: #fff
-      background-color: #741d17
-      border-color: #741d17
+      background-color: #78281f
+      border-color: #78281f
 
 .list-group-item-light
-  color: #797b7c
-  background-color: #f9fafb
+  color: #7b7d7d
+  background-color: #fafbfb
   &.list-group-item-action
     &:hover, &:focus
-      color: #797b7c
-      background-color: #eaedf1
+      color: #7b7d7d
+      background-color: #ecf0f0
     &.active
       color: #fff
-      background-color: #797b7c
-      border-color: #797b7c
+      background-color: #7b7d7d
+      border-color: #7b7d7d
 
 .list-group-item-dark
-  color: #3e152b
-  background-color: #d9c3cf
+  color: #404848
+  background-color: #dadedf
   &.list-group-item-action
     &:hover, &:focus
-      color: #3e152b
-      background-color: #cfb3c3
+      color: #404848
+      background-color: #ccd2d3
     &.active
       color: #fff
-      background-color: #3e152b
-      border-color: #3e152b
+      background-color: #404848
+      border-color: #404848
 
 .close
   float: right
-  font-size: 1.5rem
+  font-size: 1.40625rem
   font-weight: 700
   line-height: 1
-  color: #000
-  text-shadow: 0 1px 0 #fff
+  color: #fff
+  text-shadow: none
   opacity: .5
   &:not(:disabled):not(.disabled)
     cursor: pointer
     &:hover, &:focus
-      color: #000
+      color: #fff
       text-decoration: none
       opacity: .75
 
@@ -4671,7 +4667,7 @@ button.close
   -ms-flex-pack: justify
   justify-content: space-between
   padding: 1rem
-  border-bottom: 1px solid #e9ecef
+  border-bottom: 1px solid #ecf0f1
   border-top-left-radius: 0.3rem
   border-top-right-radius: 0.3rem
   .close
@@ -4700,7 +4696,7 @@ button.close
   -ms-flex-pack: end
   justify-content: flex-end
   padding: 1rem
-  border-top: 1px solid #e9ecef
+  border-top: 1px solid #ecf0f1
   >
     \:not(:first-child)
       margin-left: .25rem
@@ -4732,7 +4728,7 @@ button.close
   z-index: 1070
   display: block
   margin: 0
-  font-family: "Ubuntu", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
   font-style: normal
   font-weight: 400
   line-height: 1.5
@@ -4746,7 +4742,7 @@ button.close
   word-spacing: normal
   white-space: normal
   line-break: auto
-  font-size: 0.875rem
+  font-size: 0.8203125rem
   word-wrap: break-word
   opacity: 0
   &.show
@@ -4825,7 +4821,7 @@ button.close
   z-index: 1060
   display: block
   max-width: 276px
-  font-family: "Ubuntu", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
   font-style: normal
   font-weight: 400
   line-height: 1.5
@@ -4839,7 +4835,7 @@ button.close
   word-spacing: normal
   white-space: normal
   line-break: auto
-  font-size: 0.875rem
+  font-size: 0.8203125rem
   word-wrap: break-word
   background-color: #fff
   background-clip: padding-box
@@ -4945,7 +4941,7 @@ button.close
 .popover-header
   padding: 0.5rem 0.75rem
   margin-bottom: 0
-  font-size: 1rem
+  font-size: 0.9375rem
   color: inherit
   background-color: #f7f7f7
   border-bottom: 1px solid #ebebeb
@@ -4956,7 +4952,7 @@ button.close
 
 .popover-body
   padding: 0.5rem 0.75rem
-  color: #333
+  color: #212529
 
 .carousel
   position: relative
@@ -5187,92 +5183,92 @@ button.close
   vertical-align: text-top !important
 
 .bg-primary
-  background-color: #E95420 !important
+  background-color: #2C3E50 !important
 
 a.bg-primary
   &:hover, &:focus
-    background-color: #c34113 !important
+    background-color: #1a252f !important
 
 button.bg-primary
   &:hover, &:focus
-    background-color: #c34113 !important
+    background-color: #1a252f !important
 
 .bg-secondary
-  background-color: #AEA79F !important
+  background-color: #95a5a6 !important
 
 a.bg-secondary
   &:hover, &:focus
-    background-color: #978e83 !important
+    background-color: #798d8f !important
 
 button.bg-secondary
   &:hover, &:focus
-    background-color: #978e83 !important
+    background-color: #798d8f !important
 
 .bg-success
-  background-color: #38B44A !important
+  background-color: #18BC9C !important
 
 a.bg-success
   &:hover, &:focus
-    background-color: #2c8d3a !important
+    background-color: #128f76 !important
 
 button.bg-success
   &:hover, &:focus
-    background-color: #2c8d3a !important
+    background-color: #128f76 !important
 
 .bg-info
-  background-color: #17a2b8 !important
+  background-color: #3498DB !important
 
 a.bg-info
   &:hover, &:focus
-    background-color: #117a8b !important
+    background-color: #217dbb !important
 
 button.bg-info
   &:hover, &:focus
-    background-color: #117a8b !important
+    background-color: #217dbb !important
 
 .bg-warning
-  background-color: #EFB73E !important
+  background-color: #F39C12 !important
 
 a.bg-warning
   &:hover, &:focus
-    background-color: #e7a413 !important
+    background-color: #c87f0a !important
 
 button.bg-warning
   &:hover, &:focus
-    background-color: #e7a413 !important
+    background-color: #c87f0a !important
 
 .bg-danger
-  background-color: #DF382C !important
+  background-color: #E74C3C !important
 
 a.bg-danger
   &:hover, &:focus
-    background-color: #bc271c !important
+    background-color: #d62c1a !important
 
 button.bg-danger
   &:hover, &:focus
-    background-color: #bc271c !important
+    background-color: #d62c1a !important
 
 .bg-light
-  background-color: #e9ecef !important
+  background-color: #ecf0f1 !important
 
 a.bg-light
   &:hover, &:focus
-    background-color: #cbd3da !important
+    background-color: #cfd9db !important
 
 button.bg-light
   &:hover, &:focus
-    background-color: #cbd3da !important
+    background-color: #cfd9db !important
 
 .bg-dark
-  background-color: #772953 !important
+  background-color: #7b8a8b !important
 
 a.bg-dark
   &:hover, &:focus
-    background-color: #511c39 !important
+    background-color: #636f70 !important
 
 button.bg-dark
   &:hover, &:focus
-    background-color: #511c39 !important
+    background-color: #636f70 !important
 
 .bg-white
   background-color: #fff !important
@@ -5311,28 +5307,28 @@ button.bg-dark
   border-left: 0 !important
 
 .border-primary
-  border-color: #E95420 !important
+  border-color: #2C3E50 !important
 
 .border-secondary
-  border-color: #AEA79F !important
+  border-color: #95a5a6 !important
 
 .border-success
-  border-color: #38B44A !important
+  border-color: #18BC9C !important
 
 .border-info
-  border-color: #17a2b8 !important
+  border-color: #3498DB !important
 
 .border-warning
-  border-color: #EFB73E !important
+  border-color: #F39C12 !important
 
 .border-danger
-  border-color: #DF382C !important
+  border-color: #E74C3C !important
 
 .border-light
-  border-color: #e9ecef !important
+  border-color: #ecf0f1 !important
 
 .border-dark
-  border-color: #772953 !important
+  border-color: #7b8a8b !important
 
 .border-white
   border-color: #fff !important
@@ -7152,66 +7148,66 @@ button.bg-dark
   color: #fff !important
 
 .text-primary
-  color: #E95420 !important
+  color: #2C3E50 !important
 
 a.text-primary
   &:hover, &:focus
-    color: #c34113 !important
+    color: #1a252f !important
 
 .text-secondary
-  color: #AEA79F !important
+  color: #95a5a6 !important
 
 a.text-secondary
   &:hover, &:focus
-    color: #978e83 !important
+    color: #798d8f !important
 
 .text-success
-  color: #38B44A !important
+  color: #18BC9C !important
 
 a.text-success
   &:hover, &:focus
-    color: #2c8d3a !important
+    color: #128f76 !important
 
 .text-info
-  color: #17a2b8 !important
+  color: #3498DB !important
 
 a.text-info
   &:hover, &:focus
-    color: #117a8b !important
+    color: #217dbb !important
 
 .text-warning
-  color: #EFB73E !important
+  color: #F39C12 !important
 
 a.text-warning
   &:hover, &:focus
-    color: #e7a413 !important
+    color: #c87f0a !important
 
 .text-danger
-  color: #DF382C !important
+  color: #E74C3C !important
 
 a.text-danger
   &:hover, &:focus
-    color: #bc271c !important
+    color: #d62c1a !important
 
 .text-light
-  color: #e9ecef !important
+  color: #ecf0f1 !important
 
 a.text-light
   &:hover, &:focus
-    color: #cbd3da !important
+    color: #cfd9db !important
 
 .text-dark
-  color: #772953 !important
+  color: #7b8a8b !important
 
 a.text-dark
   &:hover, &:focus
-    color: #511c39 !important
+    color: #636f70 !important
 
 .text-body
-  color: #333 !important
+  color: #212529 !important
 
 .text-muted
-  color: #868e96 !important
+  color: #95a5a6 !important
 
 .text-black-50
   color: rgba(0, 0, 0, 0.5) !important
@@ -7247,10 +7243,10 @@ a.text-dark
     content: " (" attr(title) ")"
   pre
     white-space: pre-wrap !important
-    border: 1px solid #AEA79F
+    border: 1px solid #b4bcc2
     page-break-inside: avoid
   blockquote
-    border: 1px solid #AEA79F
+    border: 1px solid #b4bcc2
     page-break-inside: avoid
   thead
     display: table-header-group
@@ -7284,3 +7280,136 @@ a.text-dark
   .table .thead-dark th
     color: inherit
     border-color: #dee2e6
+
+.bg-primary .navbar-nav .active > .nav-link
+  color: #18BC9C !important
+
+.bg-dark
+  background-color: #18BC9C !important
+  &.navbar-dark .navbar-nav
+    .nav-link
+      &:focus, &:hover
+        color: #2C3E50 !important
+    .active > .nav-link
+      color: #2C3E50 !important
+
+.btn-secondary, .btn-warning
+  color: #fff
+  &:hover
+    color: #fff
+
+.table .thead-dark th
+  background-color: #2C3E50
+
+.table-success, .table-info, .table-warning, .table-danger
+  color: #fff
+
+.table-success
+  background-color: #18BC9C
+  >
+    th, td
+      background-color: #18BC9C
+
+.table-info
+  background-color: #3498DB
+  >
+    th, td
+      background-color: #3498DB
+
+.table-danger
+  background-color: #E74C3C
+  >
+    th, td
+      background-color: #E74C3C
+
+.table-warning
+  background-color: #F39C12
+  >
+    th, td
+      background-color: #F39C12
+
+.table-hover
+  .table-success:hover
+    background-color: #15a589
+    >
+      th, td
+        background-color: #15a589
+  .table-info:hover
+    background-color: #258cd1
+    >
+      th, td
+        background-color: #258cd1
+  .table-danger:hover
+    background-color: #e43725
+    >
+      th, td
+        background-color: #e43725
+  .table-warning:hover
+    background-color: #e08e0b
+    >
+      th, td
+        background-color: #e08e0b
+
+.nav-tabs
+  .nav-link.active
+    color: #2C3E50
+    &:focus, &:hover
+      color: #2C3E50
+  .nav-item.open .nav-link
+    color: #2C3E50
+    &:focus, &:hover
+      color: #2C3E50
+
+.pagination a:hover
+  text-decoration: none
+
+.close
+  text-decoration: none
+  opacity: 0.4
+  &:hover, &:focus
+    opacity: 1
+
+.badge-secondary, .badge-warning
+  color: #fff
+
+.alert
+  border: none
+  color: #fff
+  a, .alert-link
+    color: #fff
+    text-decoration: underline
+
+.alert-primary
+  background-color: #2C3E50
+
+.alert-secondary
+  background-color: #95a5a6
+
+.alert-success
+  background-color: #18BC9C
+
+.alert-info
+  background-color: #3498DB
+
+.alert-warning
+  background-color: #F39C12
+
+.alert-danger
+  background-color: #E74C3C
+
+.alert-light
+  background-color: #ecf0f1
+
+.alert-dark
+  background-color: #7b8a8b
+
+.alert-light
+  color: #212529
+  a, .alert-link
+    color: #212529
+
+.modal .close
+  color: #000
+  &:not(:disabled):not(.disabled)
+    &:hover, &:focus
+      color: #000
