@@ -1,6 +1,5 @@
 class GroupsController < ApplicationController
-  before_action :authenticate_user!
- 
+  before_action :authenticate_user! 
   
   def index
     @groups = Group.all
@@ -12,7 +11,7 @@ class GroupsController < ApplicationController
   
  def create
    @group = Group.new(group_params)   
-
+   current_user.groups << @group
    if @group.save
    flash[:notice] = "Group created!"
    redirect_to profile_path(current_user)
