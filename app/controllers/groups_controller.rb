@@ -5,19 +5,21 @@ class GroupsController < ApplicationController
     @groups = Group.all
   end
   
+ def show
+   @group = Group.find(params[:id])
+ end
+  
   def new
     @group = Group.new
   end
   
  def create
    @group = Group.new(group_params)   
-   current_user.groups << @group
-   if @group.save
+   current_user.groups << @group   
    flash[:notice] = "Group created!"
    redirect_to profile_path(current_user)
-   else
-   render :new
-   end
+  
+   
  end
   private
 

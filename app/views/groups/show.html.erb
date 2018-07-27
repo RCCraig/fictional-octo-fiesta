@@ -1,0 +1,9 @@
+<%= @group.name %>
+Users: <%= @group.users.count %>
+Orders: <%= @group.orders.count %>
+
+<%= link_to "Join Now", memberships_path(group_id: @group),
+                                              class: "btn btn-xs btn-success", 
+                                              method: :post %>
+
+<%= link_to "Add Order", new_order_path, class: "btn btn-xs btn-warning"%>
